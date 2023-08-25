@@ -14,9 +14,8 @@ public class When_Buying_No_Books
 
     Because of = () =>
     {
-        result = ClassUnderTest.GetCost(new[] { 1 });
+        result = ClassUnderTest.GetCost(new int[] { });
     };
 
     It Should_calculate_cost = () => result.ShouldEqual(0m);
 }
-
